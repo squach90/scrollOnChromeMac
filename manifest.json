@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Middle Click Scroll for macOS",
+  "version": "1.0",
+  "description": "Ajoute un scroll auto comme sur Windows avec le clic molette.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
